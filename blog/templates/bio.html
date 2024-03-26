@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<main>
+    <nav>
+        <div id="mainprofile">
+            <h1>Hello, My Name Is Sunday</h1>
+            <img src="../static/img/profile1.jpg" alt="">
+            <ul id="icons">
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-whatsapp"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+            </ul>
+        </div>
+    </nav><hr>
+    <div id="mainone">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis illo facere consequatur, recusandae optio dolores. Amet veritatis vitae corrupti maxime, quaerat deserunt laborum ex. Dolores aliquid cumque illum voluptates nulla?</p>
+    </div><hr>
+    <div id="maintwo">
+        <h2>Details</h2>
+        <form action="">
+            <li>
+                <label for="">NAME: </label><br>
+            </li>
+            <li>
+                <label for="">MAT NO: </label><br>
+            </li>
+            <li>
+                <label for="">DEPARTMENT: </label><br>
+            </li>
+            <li>
+                <label for="">FACULTY: </label><br>
+            </li>
+            <li>
+                <label for="">COURSE: </label><br>
+            </li>
+            <li>
+                <label for="">DATE</label><br>
+            </li>
+        </form>
+    </div>
+</main>
+
+<style>
+    #mainprofile {
+        padding: 20px;
+        text-align: center;
+    }
+    #mainprofile img {
+        width: 50%;
+        clip-path: circle();
+    }
+    #icons {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        padding: 0;
+        align-items: center;
+    }
+    #icons li {
+        list-style: none;
+        
+    }
+    #icons i {
+        font-size: 170%;
+    }
+    #icons i:hover {
+        background-color: black;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    #mainone {
+        padding: 10px;
+        font-weight: bolder;
+    }
+
+    #maintwo {
+        padding: 10px;
+    }
+    #maintwo form li {
+        padding: 10px 5px 10px 5px;
+    }
+</style>
+
+{% endblock %}
